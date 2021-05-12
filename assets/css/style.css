@@ -77,10 +77,10 @@ h1, h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
-/* animates zoom effect on loading page */
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards; 
+   /* animates zoom effect on loading page */
+   animation-name: hero-zoom;
+   animation-duration: 5s;
+   animation-fill-mode: forwards; 
 }
 
 /* creates the level of zoom for hero image */
@@ -122,7 +122,7 @@ animation-fill-mode: forwards;
 #left-about {
     padding-top: 30px;
     width: 33%;
-    float: left;  
+    float: left;
 }
 
 #right-about {
@@ -184,8 +184,8 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpg') no-repeat center center; 
-    height: 100%; 
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -197,7 +197,7 @@ hr {
     background-size: cover;
     background-position: center;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 #times div {
@@ -216,7 +216,7 @@ hr {
     color: #fafafa;
 }
 
-/* footer */ 
+/* footer */
 
 footer {
     height: 150px;
@@ -237,7 +237,7 @@ footer {
     color: #3a3a3a;
 }
 
-/* galley */ 
+/* galley */
 
 #photos {
     clear: both;
@@ -248,6 +248,39 @@ footer {
 
 #photos > img {
     width: 100%;
+}
+
+/* Media queries */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
 
 
